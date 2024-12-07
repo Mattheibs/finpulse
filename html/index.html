@@ -24,6 +24,14 @@
 		<link rel="preload" href="../images/background.svg" as="image" />
 	</head>
 	<body>
+		<img
+			class="mobile-hero-background"
+			src="../images/mobile-background.png"
+			alt=""
+			width="100%"
+			height="100%"
+			loading="eager"
+		/>
 		<section class="container">
 			<section class="above-fold">
 				<nav class="above-fold-nav">
@@ -46,6 +54,48 @@
 							<a href=""><button>Contact Us</button></a>
 						</li>
 					</ul>
+					<div class="above-fold-mobile-menu">
+						<ul class="above-fold-mobile-menu-item">
+							<li><a href="">Home</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Services</a></li>
+							<li><a href="">Blog</a></li>
+						</ul>
+						<ul class="above-fold-mobile-menu-item nav-right">
+							<li><a href="">Log In</a></li>
+							<li>
+								<a href=""
+									><button>Contact Us</button></a
+								>
+							</li>
+						</ul>
+					</div>
+					<svg
+						width="24"
+						height="16"
+						viewBox="0 0 24 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						class="hamburger-menu-open"
+					>
+						<path
+							d="M0 16V13.3333H24V16H0ZM0 9.33333V6.66667H24V9.33333H0ZM0 2.66667V0H24V2.66667H0Z"
+							fill="#00A2B3"
+						/>
+					</svg>
+					<svg
+						width="14"
+						height="14"
+						viewBox="0 0 14 14"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						class="menu-close"
+					>
+						<path
+							d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+							fill="#00A2B3"
+						/>
+					</svg>
 				</nav>
 				<img
 					class="hero-background"
@@ -55,6 +105,7 @@
 					height="100%"
 					loading="eager"
 				/>
+
 				<section class="hero">
 					<h1>
 						Empower Your Financial Future with
@@ -64,6 +115,7 @@
 						AI-powered tools for personal and business finance
 						management
 					</p>
+					<button>Get Started</button>
 				</section>
 			</section>
 		</section>
@@ -891,6 +943,22 @@
 				</div>
 			</footer>
 		</section>
+		<script>
+			const menuOpen = document.querySelector(".hamburger-menu-open");
+			const menuClose = document.querySelector(".menu-close");
+			const mobileMenu = document.querySelectorAll(
+				".above-fold-mobile-menu"
+			);
+			function toggleMenu(isOpen) {
+				menuOpen.style.display = isOpen ? "none" : "block";
+				menuClose.style.display = isOpen ? "block" : "none";
+				mobileMenu.forEach((men) => {
+					men.style.display = isOpen ? "block" : "none";
+				});
+			}
+			menuOpen.addEventListener("click", () => toggleMenu(true));
+			menuClose.addEventListener("click", () => toggleMenu(false));
+		</script>
 
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
@@ -903,6 +971,28 @@
 					},
 					pauseOnMouseEnter: true,
 					speed: 1000,
+					centeredSlides: true,
+					breakpoints: {
+						// when window width is >= 320px
+						300: {
+							slidesPerView: 1.5,
+							spaceBetween: 20,
+						},
+						500: {
+							slidesPerView: 3,
+							spaceBetween: 20,
+						},
+						// when window width is >= 480px
+						750: {
+							slidesPerView: 3.9,
+							spaceBetween: 30,
+						},
+						// when window width is >= 640px
+						1100: {
+							slidesPerView: 5,
+							spaceBetween: 40,
+						},
+					},
 				});
 			});
 			document.addEventListener("DOMContentLoaded", function () {
@@ -915,6 +1005,19 @@
 					},
 					pauseOnMouseEnter: true,
 					speed: 1000,
+					centeredSlides: true,
+					breakpoints: {
+						// when window width is >= 320px
+						300: {
+							slidesPerView: 1.5,
+							spaceBetween: 20,
+						},
+
+						1100: {
+							slidesPerView: 3,
+							spaceBetween: 40,
+						},
+					},
 				});
 			});
 		</script>

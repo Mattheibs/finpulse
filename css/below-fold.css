@@ -44,7 +44,6 @@
 .reviews .swiper {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
     cursor: pointer;
 
 }
@@ -173,4 +172,37 @@ footer div {
 
 .footer-privacy a:nth-of-type(2) {
     padding-left: 16px;
+}
+
+@media (max-width: 900px) {
+    .offers {
+        margin-top: 104px;
+    }
+
+    .offers-offer-learn-more {
+        margin-top: 5px;
+    }
+
+    .pricing-options {
+        flex-wrap: wrap;
+        row-gap: 5rem;
+    }
+
+    .pricing h3 {
+        margin: 64px 0 64px 0;
+    }
+
+    .pricing-option {
+
+        min-width: 340px;
+    }
+
+    .empower {
+        height: 378px;
+    }
+
+    .empower h2 {
+        max-width: 516px;
+        margin-bottom: 32px;
+    }
 }

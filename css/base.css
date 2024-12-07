@@ -15,7 +15,7 @@
     --text-color: #FFFFFF;
     --accent-text-color: #087F93;
     --grey-color: #DDE6E8;
-    --header-font: "ClashGrotesk", sans-serif;
+    --header-font: "ClashGrotesk";
     --text-font: "Figtree", sans-serif;
     --letter-spacing: -0.12px;
 }
@@ -32,6 +32,7 @@ body {
 
 .container {
     padding: 32px 88px;
+    position: relative;
 }
 
 a {
@@ -64,6 +65,7 @@ h1 {
     letter-spacing: var(--letter-spacing);
     line-height: 110%;
     font-size: 96px;
+    font-weight: 400;
 }
 
 h2 {
@@ -72,6 +74,7 @@ h2 {
     letter-spacing: var(--letter-spacing);
     line-height: 110%;
     font-size: 64px;
+    font-weight: 400;
 }
 
 h3 {
@@ -80,6 +83,7 @@ h3 {
     letter-spacing: var(--letter-spacing);
     line-height: 110%;
     font-size: 48px;
+    font-weight: 400;
 }
 
 h4 {
@@ -88,6 +92,7 @@ h4 {
     letter-spacing: var(--letter-spacing);
     line-height: 110%;
     font-size: 32px;
+    font-weight: 400;
 }
 
 h5 {
@@ -96,6 +101,7 @@ h5 {
     letter-spacing: var(--letter-spacing);
     line-height: 110%;
     font-size: 22px;
+    font-weight: 400;
 }
 
 p {
@@ -104,4 +110,26 @@ p {
     font-family: var(--text-font);
     letter-spacing: var(--letter-spacing);
     line-height: 140%;
+    font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 32px 48px;
+    }
+
+
+    h1 {
+        font-size: 68px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
 }

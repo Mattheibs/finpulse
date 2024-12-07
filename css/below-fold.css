@@ -1,0 +1,176 @@
+.offers {
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
+    margin-top: 148px;
+    align-items: flex-start;
+}
+
+.offers h3 {
+    margin-bottom: 32px;
+}
+
+.offers img {
+    max-width: 100%;
+    margin: 16px 0 24px 0;
+}
+
+.offers-offer-learn-more a {
+    color: #00A2B3 !important;
+    margin-right: 5px;
+}
+
+.offers-sticky, .offers-right {
+    flex: 100
+}
+
+.offers-offer {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    margin-bottom: 72px;
+}
+
+.offers-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.reviews {
+    background-color: white;
+    padding: 64px 0;
+}
+
+.reviews .swiper {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    cursor: pointer;
+
+}
+
+.reviews .swiper-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews .swiper-slide h4 {
+    color: #15191B;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.reviews .swiper-slide p {
+    color: #087F93;
+}
+
+.pricing-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.pricing h3 {
+    margin: 88px 0 64px 0;
+    text-align: center;
+}
+
+.pricing-option .pricing-option-top p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.pricing-option {
+    flex: 100;
+}
+
+.pricing-option p {
+    margin-bottom: 16px;
+}
+
+.pricing-option .pricing-option-top h4 {
+    margin-bottom: 8px;
+}
+
+.pricing-option .pricing-option-top button {
+    background-color: transparent !important;
+    color: var(--accent-color);
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    border: 1px solid var(--accent-color);
+}
+
+.pricing-line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 32px 0;
+}
+
+.pricing-list {
+    font-size: 16px;
+    font-family: var(--text-font);
+    list-style-image: url(../images/check.svg);
+    color: var(--text-color);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing-list p {
+    margin-bottom: 0;
+}
+
+
+.empower {
+    position: relative;
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../images/empower.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+}
+
+.empower h2 {
+    max-width: 816px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 88px;
+    gap: 48px;
+}
+
+footer ul {
+    display: flex;
+    gap: 32px;
+}
+
+footer div {
+    display: flex;
+    gap: 32px;
+}
+
+.footer-privacy {
+    margin: 40px;
+    gap: 0;
+}
+
+.footer-privacy a:nth-of-type(1) {
+    padding-right: 16px;
+    border-right: 1px solid white;
+}
+
+.footer-privacy a:nth-of-type(2) {
+    padding-left: 16px;
+}

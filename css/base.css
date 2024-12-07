@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "ClashGrotesk";
+    src: url(../fonts/ClashGrotesk-Regular.ttf);
+    font-display: swap;
+}
+
+
+
+:root {
+    --primary-color: #06171C;
+    --accent-color: #00A2B3;
+    --opacity-accent-color: #126576;
+    --text-color: #FFFFFF;
+    --accent-text-color: #087F93;
+    --grey-color: #DDE6E8;
+    --header-font: "ClashGrotesk", sans-serif;
+    --text-font: "Figtree", sans-serif;
+    --letter-spacing: -0.12px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.container {
+    padding: 32px 88px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: var(--text-font);
+    line-height: 140%;
+    letter-spacing: var(--letter-spacing);
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: var(--letter-spacing);
+    border: none;
+    border-radius: 100px;
+}
+
+h1 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    letter-spacing: var(--letter-spacing);
+    line-height: 110%;
+    font-size: 96px;
+}
+
+h2 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    letter-spacing: var(--letter-spacing);
+    line-height: 110%;
+    font-size: 64px;
+}
+
+h3 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    letter-spacing: var(--letter-spacing);
+    line-height: 110%;
+    font-size: 48px;
+}
+
+h4 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    letter-spacing: var(--letter-spacing);
+    line-height: 110%;
+    font-size: 32px;
+}
+
+h5 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    letter-spacing: var(--letter-spacing);
+    line-height: 110%;
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    letter-spacing: var(--letter-spacing);
+    line-height: 140%;
+}

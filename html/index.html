@@ -7,9 +7,53 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Finpulse</title>
-		<link rel="stylesheet" href="../css/base.css" />
+		<!-- General meta description -->
+		<meta
+			name="description"
+			content="Take control of your finances with our expert advice, tools, and resources. Whether it's budgeting, investing, or saving for the future, we provide insights to help you make smarter financial decisions."
+		/>
+
+		<!-- Keywords for SEO -->
+		<meta
+			name="keywords"
+			content="finance, budgeting, investing, saving money, personal finance tips, financial tools, wealth management, money advice"
+		/>
+
+		<!-- Social Media Meta Tags -->
+		<!-- Open Graph for Facebook -->
+		<meta property="og:title" content="Finpulse" />
+		<meta
+			property="og:description"
+			content="Empowering you to make informed financial decisions. Explore our tools, tips, and resources for smarter money management."
+		/>
+		<meta property="og:image" content="../images/empower.png" />
+		<meta property="og:url" content="https://yourwebsite.com" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Finpulse" />
+		<meta
+			name="twitter:description"
+			content="Your go-to platform for financial advice, tools, and resources to secure your financial future."
+		/>
+		<meta name="twitter:image" content="../images/empower.png" />
+		<link
+			rel="preload"
+			href="../images/phone-background2.webp"
+			as="image"
+		/>
+		<link
+			rel="stylesheet"
+			href="../css/base.css"
+		/>
 		<link rel="stylesheet" href="../css/above-fold.css" />
-		<link rel="stylesheet" href="../css/below-fold.css" />
+		<link
+			rel="stylesheet"
+			href="../css/below-fold.css"
+			media="print"
+			onload="this.media='all'"
+		/>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -21,25 +65,24 @@
 			defer
 			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
 		></script>
-		<link rel="preload" href="../images/background.svg" as="image" />
 	</head>
 	<body>
-		<img
-			class="mobile-hero-background"
-			src="../images/mobile-background.png"
-			alt=""
-			width="100%"
-			height="40%"
-			loading="eager"
-		/>
-		<img
-			class="phone-background"
-			src="../images/phone-background.png"
-			alt=""
-			width="100%"
-			height="20rem"
-			loading="eager"
-		/>
+		<picture>
+			<source
+				media="(min-width: 540px)"
+				srcset="../images/mobile-background.png"
+			/>
+			<img
+				class="mobile-hero-background"
+				src=""
+				alt=""
+				height="auto"
+				width="auto"
+				loading="eager"
+			/>
+		</picture>
+		<img class="phone-background" src="../images/phone-background2.webp"
+		alt="" width: auto; height: auto; loading="eager" />
 		<section class="container">
 			<section class="above-fold">
 				<nav class="above-fold-nav">
@@ -48,6 +91,7 @@
 							width="60%"
 							height="60%"
 							src="../images/logo.png"
+							alt="logo"
 						/>
 					</div>
 					<ul class="above-fold-nav-flex">
@@ -105,14 +149,20 @@
 						/>
 					</svg>
 				</nav>
-				<img
-					class="hero-background"
-					src="../images/background.svg"
-					alt=""
-					width="100%"
-					height="100%"
-					loading="eager"
-				/>
+				<picture>
+					<source
+						media="(min-width: 900px)"
+						srcset="../images/background.svg"
+					/>
+					<img
+						class="hero-background"
+						src=""
+						alt=""
+						width="100%"
+						height="100%"
+						loading="eager"
+					/>
+				</picture>
 
 				<section class="hero">
 					<h1>
@@ -223,10 +273,10 @@
 
 		<section class="container offers">
 			<div class="offers-sticky">
-				<h3>
+				<h2>
 					Lorem ipsum dolor sit amet consectetu elit Ut et massa
 					mi consectetu massa.
-				</h3>
+				</h2>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipiscing elit
 					Ut et massa mi. Aliquam in hendrerit urna. Pellentesque
@@ -236,11 +286,13 @@
 			</div>
 			<div class="offers-right">
 				<div class="offers-offer">
-					<h5>Personal Finance Management</h5>
+					<h3>Personal Finance Management</h3>
 					<img
 						loading="lazy"
-						src="../images/finance-management.png"
-						alt=""
+						src="../images/finance-management.webp"
+						alt="Graphing for personal finance"
+						width="auto"
+						height="auto"
 					/>
 					<p>
 						Create budgets, track expenses, and set savings
@@ -263,11 +315,13 @@
 					</div>
 				</div>
 				<div class="offers-offer">
-					<h5>Personal Finance Management</h5>
+					<h3>Personal Finance Management</h3>
 					<img
+						width="auto"
+						height="auto"
 						loading="lazy"
-						src="../images/finaince-solutions.png"
-						alt=""
+						src="../images/finaince-solutions.webp"
+						alt="Dashboard for personal finance management"
 					/>
 					<p>
 						Create budgets, track expenses, and set savings
@@ -290,11 +344,13 @@
 					</div>
 				</div>
 				<div class="offers-offer">
-					<h5>Personal Finance Management</h5>
+					<h3>Personal Finance Management</h3>
 					<img
+						width="auto"
+						height="auto"
 						loading="lazy"
-						src="../images/financial-insights.png"
-						alt=""
+						src="../images/financial-insights.webp"
+						alt="Graphing for personal finance management"
 					/>
 					<p>
 						Create budgets, track expenses, and set savings
@@ -327,27 +383,37 @@
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 						</div>
 						<h4>
@@ -361,27 +427,37 @@
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 						</div>
 						<h4>
@@ -395,27 +471,37 @@
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 						</div>
 						<h4>
@@ -429,27 +515,37 @@
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 						</div>
 						<h4>
@@ -463,27 +559,37 @@
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 						</div>
 						<h4>
@@ -497,27 +603,37 @@
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 							<img
 								loading="lazy"
 								src="../images/blue-star.svg"
-								alt=""
+								alt="blue star"
+								width="auto"
+								height="auto"
 							/>
 						</div>
 						<h4>
@@ -561,6 +677,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -572,6 +690,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -582,6 +702,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>Monthly financial insights.</p>
@@ -590,6 +712,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -600,6 +724,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>1 user account.</p>
@@ -619,8 +745,7 @@
 								<h4 style="margin-bottom: 0">$8</h4>
 								<button
 									style="
-										background-color: #126576 !important;
-										color: #65dbe5;
+										color: white;
 										line-height: 100%;
 										max-width: 100px;
 									"
@@ -628,6 +753,7 @@
 									<img
 										src="../images/grade.svg"
 										alt=""
+										loading="lazy"
 									/>
 									Popular
 								</button>
@@ -656,6 +782,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<span> All Starterptures. </span>
@@ -664,6 +792,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -675,6 +805,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<span>Unlimited saps goals.</span>
@@ -683,6 +815,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -694,6 +828,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>AI-powered financial tips and advice.</p>
@@ -702,6 +838,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -713,6 +851,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<span>2 user accoup</span>
@@ -745,6 +885,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<span>All Pro featp.</span>
@@ -753,6 +895,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -763,6 +907,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -773,6 +919,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>Tax preparation and filing assistance.</p>
@@ -781,6 +929,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>Invoice generation and management.</p>
@@ -789,6 +939,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -824,6 +976,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<span>All Premier pures.</span>
@@ -832,6 +986,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>Customizable financial dashboards.</p>
@@ -840,6 +996,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>API integration with existing tools.</p>
@@ -848,6 +1006,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>Advanced data analytics and reporting.</p>
@@ -856,6 +1016,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -867,6 +1029,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>
@@ -878,6 +1042,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<span>Unlimited uspccounts.</span>
@@ -886,6 +1052,8 @@
 							<img
 								loading="lazy"
 								src="../images/check.svg"
+								width="auto"
+								height="auto"
 								alt=""
 							/>
 							<p>Onboarding and training sessions.</p>
@@ -895,6 +1063,13 @@
 			</section>
 
 			<section class="empower">
+				<img
+					src="../images/empower.webp"
+					loading="lazy"
+					height="100%"
+					width="100%"
+					alt=""
+				/>
 				<h2>Empower Your Financial Future with FinPulse</h2>
 				<button>
 					Get Started Now
@@ -914,7 +1089,13 @@
 			</section>
 
 			<footer>
-				<img loading="lazy" src="../images/logo.png" alt="" />
+				<img
+					width="auto"
+					height="auto"
+					loading="lazy"
+					src="../images/logo.png"
+					alt="logo"
+				/>
 				<ul>
 					<li><a href="">Home</a></li>
 					<li><a href="">About Us</a></li>
@@ -922,7 +1103,7 @@
 					<li><a href="">Contact Us</a></li>
 				</ul>
 				<div>
-					<a href=""
+					<a href="#" aria-label="Go to LinkedIn"
 						><svg
 							width="27"
 							height="24"
@@ -936,7 +1117,7 @@
 							/>
 						</svg>
 					</a>
-					<a href=""
+					<a href="#" aria-label="Go to x page"
 						><svg
 							width="26"
 							height="26"
@@ -952,8 +1133,10 @@
 							/>
 						</svg>
 					</a>
-					<a href=""
+					<a href="#" aria-label="Go to robot page"
 						><img
+							width="auto"
+							height="auto"
 							loading="lazy"
 							src="../images/space.svg"
 							alt=""

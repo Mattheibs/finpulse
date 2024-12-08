@@ -35,6 +35,10 @@
     margin-top: 32px;
 }
 
+.hero button svg {
+    margin-left: 11px;
+}
+
 .hero-background {
     position: absolute;
     top: 5%;
@@ -44,6 +48,10 @@
 }
 
 .mobile-hero-background {
+    display: none;
+}
+
+.phone-background {
     display: none;
 }
 
@@ -73,6 +81,7 @@
 .hamburger-menu-open {
     z-index: 10;
     display: none;
+    cursor: pointer;
 }
 
 .above-fold-mobile-menu {
@@ -101,6 +110,7 @@
 
 .menu-close {
     display: none;
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {
@@ -148,4 +158,19 @@
     .trusted-by {
         margin-top: 129px
     }
+}
+
+@media (max-width: 540px) {
+    .phone-background {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 20rem;
+        top: 9rem;
+    }
+
+    .mobile-hero-background {
+        display: none;
+    }
+
 }

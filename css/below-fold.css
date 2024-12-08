@@ -206,3 +206,42 @@ footer div {
         margin-bottom: 32px;
     }
 }
+
+@media (max-width: 450px) {
+    .offers {
+        gap: 32px;
+        margin-top: 104px;
+        flex-direction: column;
+    }
+
+    .offers-sticky {
+        position: relative;
+        top: 0;
+    }
+
+    .pricing-option {
+        min-width: 200px;
+    }
+
+    .pricing h3 {
+        text-align: left;
+        max-width: 18rem;
+    }
+
+    .pricing-option .pricing-option-top button {
+        justify-content: center;
+    }
+
+    .empower {
+        height: 418px;
+    }
+
+    .empower h2 {
+        max-width: 273px;
+    }
+
+    .empower button {
+        max-width: 287px;
+    }
+
+}

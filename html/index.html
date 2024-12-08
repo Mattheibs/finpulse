@@ -29,7 +29,15 @@
 			src="../images/mobile-background.png"
 			alt=""
 			width="100%"
-			height="100%"
+			height="40%"
+			loading="eager"
+		/>
+		<img
+			class="phone-background"
+			src="../images/phone-background.png"
+			alt=""
+			width="100%"
+			height="20rem"
 			loading="eager"
 		/>
 		<section class="container">
@@ -115,7 +123,20 @@
 						AI-powered tools for personal and business finance
 						management
 					</p>
-					<button>Get Started</button>
+					<button>
+						Get Started<svg
+							width="9"
+							height="9"
+							viewBox="0 0 9 9"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1.26634 9.00001L0.333008 8.06668L6.73301 1.66668H0.999674V0.333344H8.99967V8.33334H7.66634V2.60001L1.26634 9.00001Z"
+								fill="white"
+							/>
+						</svg>
+					</button>
 				</section>
 			</section>
 		</section>
@@ -601,6 +622,7 @@
 										background-color: #126576 !important;
 										color: #65dbe5;
 										line-height: 100%;
+										max-width: 100px;
 									"
 								>
 									<img
@@ -1009,7 +1031,7 @@
 					breakpoints: {
 						// when window width is >= 320px
 						300: {
-							slidesPerView: 1.5,
+							slidesPerView: 1,
 							spaceBetween: 20,
 						},
 

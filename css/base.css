@@ -1,1 +1,167 @@
-@font-face {    font-family: "ClashGrotesk";    src: url(../fonts/ClashGrotesk-Regular.ttf);    font-display: swap;}@font-face {    font-family: "Figtree";    src: url(../fonts/ClashGrotesk-Regular.ttf);    font-display: swap;}:root {    --primary-color: #06171C;    --accent-color: #19505E;    --opacity-accent-color: #126576;    --text-color: #FFFFFF;    --accent-text-color: #087F93;    --grey-color: #DDE6E8;    --header-font: "ClashGrotesk";    --text-font: "Figtree", sans-serif;    --letter-spacing: -0.12px;}*, *::before, *::after {    box-sizing: border-box;    margin: 0;    padding: 0;}body {    background-color: var(--primary-color);}.container {    padding: 32px 88px;    position: relative;}a {    text-decoration: none;    color: var(--text-color);    font-size: 16px;    font-family: var(--text-font);    line-height: 140%;    letter-spacing: var(--letter-spacing);}li {    list-style-type: none;}button {    padding: 8px 12px;    background-color: var(--accent-color);    color: var(--text-color);    font-size: 16px;    line-height: 120%;    letter-spacing: var(--letter-spacing);    border: none;    border-radius: 100px;    cursor: pointer;}button:hover {    background-color: #126576;}button:active {    background-color: #0F303A;}h1, h2, h3, h4, h5 {    color: var(--text-color);    font-family: var(--header-font);    letter-spacing: var(--letter-spacing);    line-height: 110%;    font-weight: 400;}h1 {    font-size: 96px;}h2 {    font-size: 64px;}h3 {    font-size: 48px;}h4 {    font-size: 32px;}h5 {    font-size: 22px;}p {    font-size: 18px;    color: var(--text-color);    font-family: var(--text-font);    letter-spacing: var(--letter-spacing);    line-height: 140%;    font-weight: 300;}@media (max-width: 900px) {    .container {        padding: 32px 48px;    }    h1 {        font-size: 68px;    }    h2 {        font-size: 40px;    }    h3 {        font-size: 32px;    }}@media (max-width: 450px) {    .container {        padding: 32px 20px;    }    h1 {        font-size: 48px;    }    h2 {        font-size: 33px;    }    button {        width: 100%;        text-align: center;    }}
+@font-face {
+    font-family: "ClashGrotesk";
+    src: url(../fonts/ClashGrotesk-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(../fonts/ClashGrotesk-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cormorant";
+    src: url(../fonts/Cormorant-BoldItalic.ttf);
+    font-display: swap;
+}
+
+:root {
+    --primary-color: #06171C;
+    --accent-color: #19505E;
+    --opacity-accent-color: #126576;
+    --text-color: #FFFFFF;
+    --accent-text-color: #087F93;
+    --grey-color: #DDE6E8;
+    --header-font: "ClashGrotesk";
+    --text-font: "Figtree", sans-serif;
+    --letter-spacing: -0.12px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.container {
+    padding: 32px 88px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: var(--text-font);
+    line-height: 140%;
+    letter-spacing: var(--letter-spacing);
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: var(--letter-spacing);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #126576;
+}
+
+button:active {
+    background-color: #0F303A;
+}
+
+.button-clear {
+    border: 1px solid #00A2B3;
+    background-color: transparent;
+    color: #00A2B3;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    letter-spacing: var(--letter-spacing);
+    line-height: 110%;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    letter-spacing: var(--letter-spacing);
+    line-height: 140%;
+    font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 32px 48px;
+    }
+
+    h1 {
+        font-size: 68px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .offers {
+        gap: 32px !important;
+    }
+
+    .pricing-options {
+        padding: 0 57px;
+    }
+}
+
+@media (max-width: 515px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 32px 20px;
+    }
+
+    h2 {
+        font-size: 33px;
+    }
+
+    button {
+        width: 100%;
+        text-align: center;
+    }
+}

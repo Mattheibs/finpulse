@@ -15,7 +15,7 @@
 			name="keywords"
 			content="finance, budgeting, investing, saving money, personal finance tips, financial tools, wealth management, money advice"
 		/>
-		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
 		<meta property="og:title" content="Finpulse" />
 		<meta
 			property="og:description"
@@ -36,10 +36,7 @@
 			href="../images/phone-background2.webp"
 			as="image"
 		/>
-		<link
-			rel="stylesheet"
-			href="../css/base.css"
-		/>
+		<link rel="stylesheet" href="../css/base.css" />
 		<link rel="stylesheet" href="../css/above-fold.css" />
 		<link
 			rel="stylesheet"
@@ -70,13 +67,25 @@
 				src=""
 				alt=""
 				height="auto"
-				width="auto"
+				width="100%"
 				loading="eager"
 			/>
 		</picture>
 		<img class="phone-background" src="../images/phone-background2.webp"
 		alt="" width: auto; height: auto; loading="eager" />
-		<section class="container">
+		<section class="container container-clip">
+			<picture>
+				<source
+					media="(min-width: 900px)"
+					srcset="../images/background.svg"
+				/>
+				<img
+					class="hero-background"
+					src=""
+					alt=""
+					loading="eager"
+				/>
+			</picture>
 			<section class="above-fold">
 				<nav class="above-fold-nav">
 					<div class="above-fold-nav-logo">
@@ -88,7 +97,13 @@
 						/>
 					</div>
 					<ul class="above-fold-nav-flex">
-						<li><a href="">Home</a></li>
+						<li>
+							<a
+								style="color: #ffffff; font-weight: 600"
+								href=""
+								>Home</a
+							>
+						</li>
 						<li><a href="">About Us</a></li>
 						<li><a href="">Services</a></li>
 						<li><a href="">Blog</a></li>
@@ -96,12 +111,36 @@
 					<ul class="above-fold-nav-flex nav-right">
 						<li><a href="">Log In</a></li>
 						<li>
-							<a href=""><button>Contact Us</button></a>
+							<a href=""
+								><button>
+									Contact Us
+									<svg
+										width="9"
+										height="9"
+										viewBox="0 0 9 9"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M1.26659 8.99992L0.333252 8.06659L6.73325 1.66659H0.999919V0.333252H8.99992V8.33325H7.66658V2.59992L1.26659 8.99992Z"
+											fill="white"
+										/>
+									</svg></button
+							></a>
 						</li>
 					</ul>
 					<div class="above-fold-mobile-menu">
 						<ul class="above-fold-mobile-menu-item">
-							<li><a href="">Home</a></li>
+							<li>
+								<a
+									style="
+										color: #ffffff;
+										font-weight: 600;
+									"
+									href=""
+									>Home</a
+								>
+							</li>
 							<li><a href="">About Us</a></li>
 							<li><a href="">Services</a></li>
 							<li><a href="">Blog</a></li>
@@ -142,25 +181,13 @@
 						/>
 					</svg>
 				</nav>
-				<picture>
-					<source
-						media="(min-width: 900px)"
-						srcset="../images/background.svg"
-					/>
-					<img
-						class="hero-background"
-						src=""
-						alt=""
-						width="100%"
-						height="100%"
-						loading="eager"
-					/>
-				</picture>
 
 				<section class="hero">
 					<h1>
 						Empower Your Financial Future with
-						<span>FinPulse</span>
+						<span style="font-family: Cormorant"
+							>FinPulse</span
+						>
 					</h1>
 					<p>
 						AI-powered tools for personal and business finance
@@ -245,18 +272,6 @@
 						fill="white"
 					/>
 				</svg>
-				<svg
-					width="16"
-					height="15"
-					viewBox="0 0 16 15"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M8.25793 0L10.054 5.52786H15.8664L11.1641 8.94427L12.9602 14.4721L8.25793 11.0557L3.55565 14.4721L5.35176 8.94427L0.649482 5.52786H6.46182L8.25793 0Z"
-						fill="white"
-					/>
-				</svg>
 			</div>
 			<p>Trusted by</p>
 			<div class="swiper swiper-logo">
@@ -279,7 +294,7 @@
 			</div>
 			<div class="offers-right">
 				<div class="offers-offer">
-					<h3>Personal Finance Management</h3>
+					<h5>Personal Finance Management</h5>
 					<img
 						loading="lazy"
 						src="../images/finance-management.webp"
@@ -308,7 +323,7 @@
 					</div>
 				</div>
 				<div class="offers-offer">
-					<h3>Personal Finance Management</h3>
+					<h5>Business Finance Solutions</h5>
 					<img
 						width="auto"
 						height="auto"
@@ -317,8 +332,8 @@
 						alt="Dashboard for personal finance management"
 					/>
 					<p>
-						Create budgets, track expenses, and set savings
-						goals with ease.
+						Efficient tools for invoicing, cash flow analysis,
+						and tax preparation.
 					</p>
 					<div class="offers-offer-learn-more">
 						<a href="">Learn More</a
@@ -337,7 +352,7 @@
 					</div>
 				</div>
 				<div class="offers-offer">
-					<h3>Personal Finance Management</h3>
+					<h5>AI-Powered Financial Insights</h5>
 					<img
 						width="auto"
 						height="auto"
@@ -346,8 +361,8 @@
 						alt="Graphing for personal finance management"
 					/>
 					<p>
-						Create budgets, track expenses, and set savings
-						goals with ease.
+						Get personalized advice and investment
+						recommendations.
 					</p>
 					<div class="offers-offer-learn-more">
 						<a href="">Learn More</a
@@ -647,7 +662,7 @@
 						<div class="pricing-option-top">
 							<p>STARTER</p>
 							<h4>Free</h4>
-							<button>
+							<button class="button-clear">
 								Get Started for Free
 								<svg
 									width="9"
@@ -736,23 +751,17 @@
 								"
 							>
 								<h4 style="margin-bottom: 0">$8</h4>
-								<button
-									style="
-										color: white;
-										line-height: 100%;
-										max-width: 100px;
-									"
-								>
+								<div class="pill">
 									<img
 										src="../images/grade.svg"
 										alt=""
 										loading="lazy"
 									/>
 									Popular
-								</button>
+								</div>
 							</div>
 
-							<button>
+							<button class="button-clear">
 								Get Started with Pro
 								<svg
 									width="9"
@@ -855,7 +864,7 @@
 						<div class="pricing-option-top">
 							<p>PREMIER</p>
 							<h4>$20</h4>
-							<button>
+							<button class="button-clear">
 								Get Started with Premier
 								<svg
 									width="9"
@@ -946,7 +955,7 @@
 						<div class="pricing-option-top">
 							<p>ENTERPRISE</p>
 							<h4>Custom</h4>
-							<button>
+							<button class="button-clear">
 								Get Started with Custom
 								<svg
 									width="9"
@@ -1063,7 +1072,10 @@
 					width="100%"
 					alt=""
 				/>
-				<h2>Empower Your Financial Future with FinPulse</h2>
+				<h2>
+					Empower Your Financial Future with
+					<span style="font-family: Cormorant">FinPulse</span>
+				</h2>
 				<button>
 					Get Started Now
 					<svg
@@ -1090,7 +1102,13 @@
 					alt="logo"
 				/>
 				<ul>
-					<li><a href="">Home</a></li>
+					<li>
+						<a
+							style="color: #ffffff; font-weight: 600"
+							href=""
+							>Home</a
+						>
+					</li>
 					<li><a href="">About Us</a></li>
 					<li><a href="">Blog</a></li>
 					<li><a href="">Contact Us</a></li>

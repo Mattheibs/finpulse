@@ -164,4 +164,8 @@ p {
         width: 100%;
         text-align: center;
     }
+
+    .pricing-options {
+        padding: 0 0px;
+    }
 }

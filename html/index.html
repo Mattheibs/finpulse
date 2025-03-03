@@ -92,8 +92,9 @@
 						<img
 							width="60%"
 							height="60%"
-							src="../images/logo.png"
+							src="../images/logo.svg"
 							alt="logo"
+							class="logo"
 						/>
 					</div>
 					<ul class="above-fold-nav-flex">
@@ -149,8 +150,21 @@
 							<li><a href="">Log In</a></li>
 							<li>
 								<a href=""
-									><button>Contact Us</button></a
-								>
+									><button>
+										Contact Us
+										<svg
+											width="9"
+											height="9"
+											viewBox="0 0 9 9"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1.26659 8.99992L0.333252 8.06659L6.73325 1.66659H0.999919V0.333252H8.99992V8.33325H7.66658V2.59992L1.26659 8.99992Z"
+												fill="white"
+											/>
+										</svg></button
+								></a>
 							</li>
 						</ul>
 					</div>
@@ -788,7 +802,7 @@
 								height="auto"
 								alt=""
 							/>
-							<span> All Starterptures. </span>
+							<span> All Starter features. </span>
 						</div>
 						<div class="pricing-list">
 							<img
@@ -891,7 +905,7 @@
 								height="auto"
 								alt=""
 							/>
-							<span>All Pro featp.</span>
+							<span>All Pro features.</span>
 						</div>
 						<div class="pricing-list">
 							<img
@@ -982,7 +996,7 @@
 								height="auto"
 								alt=""
 							/>
-							<span>All Premier pures.</span>
+							<span>All Premier features.</span>
 						</div>
 						<div class="pricing-list">
 							<img
@@ -1098,8 +1112,9 @@
 					width="auto"
 					height="auto"
 					loading="lazy"
-					src="../images/logo.png"
+					src="../images/logo.svg"
 					alt="logo"
+					class="logo"
 				/>
 				<ul>
 					<li>
@@ -1162,15 +1177,21 @@
 		<script>
 			const menuOpen = document.querySelector(".hamburger-menu-open");
 			const menuClose = document.querySelector(".menu-close");
-			const mobileMenu = document.querySelectorAll(
+			const mobileMenu = document.querySelector(
 				".above-fold-mobile-menu"
 			);
+			const body = document.querySelector("body");
 			function toggleMenu(isOpen) {
 				menuOpen.style.display = isOpen ? "none" : "block";
 				menuClose.style.display = isOpen ? "block" : "none";
-				mobileMenu.forEach((men) => {
-					men.style.display = isOpen ? "block" : "none";
-				});
+
+				mobileMenu.style.display = isOpen ? "block" : "none";
+
+				if (isOpen) {
+					body.classList.add("no-scroll");
+				} else {
+					body.classList.remove("no-scroll");
+				}
 			}
 			menuOpen.addEventListener("click", () => toggleMenu(true));
 			menuClose.addEventListener("click", () => toggleMenu(false));

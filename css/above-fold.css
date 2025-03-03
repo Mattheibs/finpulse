@@ -107,10 +107,13 @@
     border-radius: 8px;
     text-align: center;
     padding: 100px 32px;
+    z-index: 10;
 }
 
 .above-fold-mobile-menu-item button {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .above-fold-mobile-menu-item li {
@@ -199,6 +202,10 @@
 
     .mobile-hero-background {
         display: none;
+    }
+
+    .trusted-by {
+        margin-top: 129px;
     }
 }
 

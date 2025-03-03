@@ -43,6 +43,10 @@ body {
     position: relative;
 }
 
+.logo {
+    max-width: 130px;
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -57,7 +61,7 @@ li {
 }
 
 button {
-    padding: 8px 12px;
+    padding: 9px 12px;
     background-color: var(--accent-color);
     color: var(--text-color);
     font-size: 16px;
@@ -66,10 +70,15 @@ button {
     border: none;
     border-radius: 100px;
     cursor: pointer;
+    line-height: 140%;
 }
 
 button:hover {
     background-color: #126576;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 button:active {
@@ -79,7 +88,7 @@ button:active {
 .button-clear {
     border: 1px solid #00A2B3;
     background-color: transparent;
-    color: #00A2B3;
+    color: #00A2B3 !important;
 }
 
 h1, h2, h3, h4, h5 {

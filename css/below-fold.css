@@ -258,6 +258,13 @@ footer div {
         min-width: 200px;
     }
 
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     .pricing h3 {
         text-align: left;
         max-width: 18rem;

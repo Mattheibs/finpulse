@@ -56,6 +56,14 @@ a {
     letter-spacing: var(--letter-spacing);
 }
 
+a:hover {
+    color: #126576;
+}
+
+a:active {
+    color: #0F303A;
+}
+
 li {
     list-style-type: none;
 }

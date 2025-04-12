@@ -11,7 +11,7 @@
 }
 
 .offers img {
-    max-width: 100%;
+    max-width: 588px;
     margin: 16px 0 24px 0;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .reviews {
-    background-color: white;
+    background-color: #EBFCFD;
     padding: 64px 0;
 }
 
@@ -75,6 +75,7 @@
 .reviews .swiper-slide {
     display: flex;
     flex-direction: column;
+    padding: 40px;
 }
 
 .reviews .swiper-slide h4 {
@@ -109,6 +110,7 @@
 
 .pricing-option p {
     margin-bottom: 16px;
+    color: #DDE6E8;
 }
 
 .pricing-option .pricing-option-top h4 {
@@ -121,6 +123,12 @@
     gap: 11px;
     align-items: center;
     border: 1px solid var(--accent-color);
+}
+
+.pricing-option .pricing-option-top button:hover {
+    background-color: transparent;
+    border-color: #126576 !important;
+    color: #126576 !important;
 }
 
 .pricing-line {
@@ -197,6 +205,12 @@ footer div {
 
 .footer-privacy a:nth-of-type(2) {
     padding-left: 16px;
+}
+
+@media (max-width: 1200px) {
+    .offers img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 900px) {

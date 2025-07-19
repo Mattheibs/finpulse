@@ -1,18 +1,18 @@
 @font-face {
     font-family: "ClashGrotesk";
-    src: url(../fonts/ClashGrotesk-Regular.ttf);
+    src: url(../fonts/ClashGrotesk-Regular.woff2);
     font-display: swap;
 }
 
 @font-face {
     font-family: "Figtree";
-    src: url(../fonts/Figtree-Regular.ttf);
+    src: url(../fonts/Figtree-Regular.woff2);
     font-display: swap;
 }
 
 @font-face {
     font-family: "Cormorant";
-    src: url(../fonts/Cormorant-BoldItalic.ttf);
+    src: url(../fonts/Cormorant-BoldItalic.woff2);
     font-display: swap;
 }
 
@@ -135,7 +135,24 @@ p {
     line-height: 140%;
     font-weight: 300;
 }
-
+.error-link{
+    color: #00A2B3;
+}
+.error-page-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.error-page-container-error{
+   max-width: 100%;
+}
+.error-page-container p{
+   text-align: center;
+}
 @media (max-width: 900px) {
     .container {
         padding: 32px 48px;
